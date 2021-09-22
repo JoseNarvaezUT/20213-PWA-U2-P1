@@ -11,11 +11,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     console.log(event.request.url);
 
-    if (event.request.url.includes('.jpg')) {
-        let newResp = fetch('/img/felino.jpg');
-        console.log('Es un imagen :D');
-        event.respondWith(newResp);
-    }
+    // if (event.request.url.includes('.jpg')) {
+    //     let newResp = fetch('/img/felino.jpg');
+    //     console.log('Es un imagen :D');
+    //     event.respondWith(newResp);
+    // }
 
     if (event.request.url.includes('page.css')) {
 
